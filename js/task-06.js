@@ -1,4 +1,3 @@
-
 const inputValue = document.querySelector("#validation-input");
 
 const validValue = 6;
@@ -14,4 +13,5 @@ function validChecker(event) {
         inputValue.classList.remove("invalid")
         return
     } inputValue.classList.add("invalid");
+    inputValue.classList.remove("valid");
 }

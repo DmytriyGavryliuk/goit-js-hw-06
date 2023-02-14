@@ -13,8 +13,8 @@ const loginFormSubmitHeandler = (event) => {
     
   email === "" || password === ""
     ? alert("Заповніть форму")
-    : console.log(formData);
-  event.currentTarget.reset();
+    : (console.log(formData),
+  event.currentTarget.reset());
 };
 
 form.addEventListener("submit", loginFormSubmitHeandler);
